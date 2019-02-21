@@ -1,12 +1,10 @@
 import React from 'react'
 
 // import child components
-import Navigation from './Navigation'
 import Profile from './Profile'
 
 export default () => (
-    <div className='landing-page'>
+    <div className='home-page'>
         <Profile />
-        <Navigation />
     </div>
 )

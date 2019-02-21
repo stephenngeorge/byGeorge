@@ -1,0 +1,43 @@
+.home-button__wrapper
+{
+    position: fixed;
+    top: 3rem;
+    left: 3rem;
+    width: 12rem;
+
+    display: flex;
+    align-items: center;
+}
+
+#home-button
+{
+    margin-right: 12%;
+    transition: transform .4s;
+}
+#home-button:hover
+{
+    transform: rotate(-30deg);
+}
+
+#home-button > a
+{
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    color: var(--theme-blue);
+    text-decoration: none;
+    text-align: center;
+}
+
+#home-button--tag
+{
+    position: relative;
+    opacity: 0;
+    left: 1rem;
+
+    transition: all .4s;
+}
+#home-button:hover + #home-button--tag
+{
+    opacity: 1;
+    left: 0;
+}
