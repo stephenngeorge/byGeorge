@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400');
 
 *
 {
@@ -9,13 +10,37 @@
 /* DEFINE VARIABLES */
 :root
 {
-    --theme-red: #ff4444;
+    --theme-blue: #3A738F;
     --facebook-blue: #3b5998;
     --twitter-blue: #00aced;
     --instagram-violet: #bc2a8d;
     --linkedin-blue: #0077b5;
 
     --font-sans-serif: 'Raleway', sans-serif;
+    --font-serif: 'Roboto Slab', serif;
+}
+
+.landing-page
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 3rem 0 5rem 0;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 723px)
+{
+    .landing-page
+    {
+        height: 100vh;
+        top: 0;
+        transform: translate(0);
+    }
 }
 
 @import './styles/nav.css';
+@import './styles/profile.css';
