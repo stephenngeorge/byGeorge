@@ -22,24 +22,17 @@
 
 .home-page
 {
+    position: relative;
+    z-index: -1000;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
+    top: 0;
+    left: 0;
     margin: 0 auto;
-    padding: 3rem 0 5rem 0;
     background-color: #fff;
-}
-
-@media screen and (max-width: 723px)
-{
-    .landing-page
-    {
-        height: 100vh;
-        top: 0;
-        transform: translate(0);
-    }
 }
 
 @import './styles/nav.css';
