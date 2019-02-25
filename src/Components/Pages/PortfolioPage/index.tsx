@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-// import childcompo
+// import childcomponents
 import ProjectCard from './ProjectCard'
+import ProjectDrawer from './ProjectDrawer'
 
 // import assets
 import {
@@ -11,15 +12,30 @@ import {
 } from '../../../assets'
 
 export default () => {
-    const projects :{ title :string, url :string, img :string }[] = [
-        { title: 'esther ministry', url:'http://estherministry.org.uk/', img: esther_screenshot },
-        { title: 'neil george photography', url: 'http://www.neilgeorgephotography.co.uk/', img: ngphoto_screenshot },
-        { title: 'stephen george portfolio', url: '/', img: portfolio_screenshot }
+
+    let [focusProject, setFocusProject] = useState({})
+
+    interface Project {
+        title: string,
+        path: string,
+        img: string
+    }
+    const projects: Project[] = [
+        { title: 'esther ministry', path: 'http://estherministry.org.uk/', img: esther_screenshot },
+        { title: 'neil george photography', path: 'http://www.neilgeorgephotography.co.uk/', img: ngphoto_screenshot },
+        { title: 'stephen george portfolio', path: '/', img: portfolio_screenshot }
     ]
     return (
         <div className='portfolio-page'>
             {
-                projects.map(project => <ProjectCard key={ project.title } project={ project } />)
+                projects.map(project => <ProjectCard    key={ project.title }
+                                                        project={ project }
+                                                        setFocusProject={ setFocusProject }
+                                        />)
+            }
+            {
+                Object.keys(focusProject).length !== 0 &&
+                <ProjectDrawer project={ focusProject } />
             }
         </div>
     )
