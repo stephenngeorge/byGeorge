@@ -36,7 +36,7 @@
 .profile__details > h1
 {
     font-family: var(--font-sans-serif);
-    font-weight: 200;
+    font-weight: 300;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -71,5 +71,41 @@
         max-width: 80%;
         padding-top: 3rem;
         padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 592px)
+{
+    .profile
+    {
+        padding: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 452px)
+{
+    .profile__details
+    {
+        text-align: center;
+    }
+
+    .profile__details > h1
+    {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    .profile__details > h2
+    {
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 412px)
+{
+    .profile__details > h1
+    {
+        font-size: 1.6rem;
+        font-weight: 600;
     }
 }

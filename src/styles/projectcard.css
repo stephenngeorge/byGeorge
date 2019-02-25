@@ -73,3 +73,49 @@
     opacity: 1;
     top: 0;
 }
+
+
+@media screen and (max-width: 949px)
+{
+    .project-card
+    {
+        height: 22rem;
+    }
+}
+@media screen and (max-width: 880px)
+{
+    .project-card
+    {
+        width: 16rem;
+        height: 24rem;
+    }
+}
+@media screen and (max-width: 770px)
+{
+    .project-card
+    {
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .project-card
+    {
+        width: calc(100% * .75);
+    }
+}
+@media screen and (max-width: 550px)
+{
+    .project-card
+    {
+        width: calc(100% * .8);
+        height: 18rem;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .project-card
+    {
+        width: calc(100% * .9);
+    }
+}

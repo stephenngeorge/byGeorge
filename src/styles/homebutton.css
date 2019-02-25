@@ -1,5 +1,6 @@
 .home-button__wrapper
 {
+    z-index: 1000;
     position: fixed;
     top: 3rem;
     left: 3rem;
@@ -40,4 +41,13 @@
 {
     opacity: 1;
     left: 0;
+}
+
+@media screen and (max-width: 570px)
+{
+    .home-button__wrapper
+    {
+        top: 1.8rem;
+        left: 1.8rem;
+    }
 }

@@ -28,12 +28,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     top: 0;
     left: 0;
     margin: 0 auto;
     background-color: #fff;
 }
+@media screen and (max-width: 1024px)
+{
+    .home-page
+    {
+        padding-top: 3rem;
+    }
+}
+
 .portfolio-page
 {
     min-height: 100vh;
@@ -41,6 +49,30 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
+@media screen and (max-width: 880px)
+{
+    .portfolio-page
+    {
+        flex-direction: column;
+        max-height: 60rem;
+        justify-content: flex-start;
+        padding: 8rem;
+    }
+}
+@media screen and (max-width: 839px)
+{
+    .portfolio-page
+    {
+        padding: 8rem 6rem;
+    }
+}
+@media screen and (max-width: 770px)
+{
+    .portfolio-page
+    {
+        max-height: 100%;
+    }
 }
 
 @import './styles/nav.css';

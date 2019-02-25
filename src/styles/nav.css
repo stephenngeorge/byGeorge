@@ -161,3 +161,28 @@
     opacity: 1;
     right: 140%;
 }
+
+@media screen and (max-width: 570px)
+{
+    .nav__wrapper
+    {
+        top: 1.8rem;
+        right: 1.8rem;
+    }
+    .btn__main
+    {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .navigation__item
+    {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .active > .navigation__item
+    {
+        right: -0.2rem;
+    }
+}
