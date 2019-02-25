@@ -1,7 +1,7 @@
 .project-card
 {
     position: relative;
-    width: 16rem;
+    width: calc(100% / 4);
     height: 24rem;
     overflow: hidden;
     margin: 1rem;

@@ -12,7 +12,7 @@
 #home-button
 {
     margin-right: 12%;
-    transition: transform .4s;
+    transition: all .4s;
 }
 #home-button:hover
 {
