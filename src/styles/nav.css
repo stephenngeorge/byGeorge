@@ -177,8 +177,13 @@
 
     .navigation__item
     {
-        width: 2.4rem;
-        height: 2.4rem;
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+    .navigation__link > img
+    {
+        width: 1.4rem;
+        height: 1.4rem;
     }
 
     .active > .navigation__item

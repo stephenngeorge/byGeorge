@@ -34,11 +34,11 @@
     margin: 0 auto;
     background-color: #fff;
 }
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 900px)
 {
     .home-page
     {
-        padding-top: 3rem;
+        padding-top: 2rem;
     }
 }
 
