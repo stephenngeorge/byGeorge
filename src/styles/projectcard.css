@@ -13,7 +13,6 @@
 }
 .project-card:hover
 {
-    cursor: pointer;
     box-shadow: 0 0 6px 6px rgba(70, 70, 70, .6);
 }
 
@@ -67,6 +66,10 @@
     box-shadow: 0 0 4px 4px rgba(70, 70, 70, .4);
 
     transition: all .4s;
+}
+.project-card__overlay > h2:hover
+{
+    cursor: pointer;
 }
 .project-card__overlay:hover > h2
 {

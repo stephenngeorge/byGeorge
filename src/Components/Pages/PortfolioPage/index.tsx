@@ -23,15 +23,7 @@ export default () => {
         img: string,
         techStack: string[]
     }
-    const projects: Project[] = [
-        {
-            title: 'esther ministry',
-            description: 'The Esther Ministry website was created to promote & give information about Rowena Cross & her Christian charity "Esther Ministry". Future plans for the site include an image gallery, a "talks" page with recordings of Rowena\'s teaching embedded from soundcloud, & a "blog" page where Rowena can post her writings & reflections',
-            path: 'http://estherministry.org.uk/',
-            repo: 'https://github.com/stephenngeorge/estherministryreact',
-            img: esther_screenshot,
-            techStack: ['react', 'react-spring', 'create-react-app', 'GoDaddy']
-        },
+    const projects: Project[] = [        
         {
             title: 'neil george photography',
             description: 'The Neil George Photography web app was created as a portfolio for the professional photographer Neil George. Features like the fading, scrolling image gallery on the homepage & the lightroom showing individual images on the gallery pages, were all coded from scratch. The site also operates on various key shortcuts like "m" to toggle the menu, and the left & right arrows & "esc" key to use in the lightroom.',
@@ -47,6 +39,14 @@ export default () => {
             repo: 'https://github.com/stephenngeorge/portfolio',
             img: portfolio_screenshot,
             techStack: ['react', 'typescript', 'create-react-app', 'react-spring']
+        },
+        {
+            title: 'esther ministry',
+            description: 'The Esther Ministry website was created to promote & give information about Rowena Cross & her Christian charity "Esther Ministry". Future plans for the site include an image gallery, a "talks" page with recordings of Rowena\'s teaching embedded from soundcloud, & a "blog" page where Rowena can post her writings & reflections',
+            path: 'http://estherministry.org.uk/',
+            repo: 'https://github.com/stephenngeorge/estherministryreact',
+            img: esther_screenshot,
+            techStack: ['react', 'react-spring', 'create-react-app', 'GoDaddy']
         }
     ]
     return (
