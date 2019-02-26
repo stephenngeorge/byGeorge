@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css'
 
@@ -6,21 +6,15 @@ import './App.css'
 import { HomeButton, Navigation } from './Components/Globals'
 import { AboutPage, HomePage, PortfolioPage } from './Components/Pages'
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div className="App">
-          <HomeButton />
-          <Navigation />
+export default () => (
+  <Router>
+    <div className="App">
+      <HomeButton />
+      <Navigation />
 
-          <Route exact path='/' component={ HomePage } />
-          <Route path='/portfolio' component={ PortfolioPage } />
-          <Route path='/about' component={ AboutPage } />
-        </div>
-      </Router>
-    )
-  }
-}
-
-export default App
+      <Route exact path='/' component={ HomePage } />
+      <Route path='/portfolio' component={ PortfolioPage } />
+      <Route path='/about' component={ AboutPage } />
+    </div>
+  </Router>
+)

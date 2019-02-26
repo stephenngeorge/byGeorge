@@ -112,10 +112,12 @@
         height: 18rem;
     }
 }
-@media screen and (max-width: 500px)
+
+@media screen and (max-width: 549px)
 {
     .project-card
     {
-        width: calc(100% * .9);
-    }
+        width: 100%;
+        height: 20rem;
+    }   
 }

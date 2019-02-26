@@ -74,6 +74,13 @@
         max-height: 100%;
     }
 }
+@media screen and (max-width: 450px)
+{
+    .portfolio-page
+    {
+        padding: 8rem 3rem;
+    }
+}
 
 @import './styles/nav.css';
 @import './styles/homebutton.css';
