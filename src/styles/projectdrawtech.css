@@ -1,0 +1,26 @@
+.project-drawer__techStack
+{
+    list-style-type: none;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-drawer__techStack--tech
+{
+    text-transform: lowercase;
+
+    padding: .5rem 1rem;
+    margin: .5rem 1rem;
+    margin-left: 0;
+
+    background-color: var(--theme-blue);
+
+    font-family: var(--font-sans-serif);
+    font-size: .9rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #fff;
+
+    box-shadow: 0 0 3px 3px rgba(40, 40, 40, .4);
+}

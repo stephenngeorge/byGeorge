@@ -10,7 +10,7 @@
 /* DEFINE VARIABLES */
 :root
 {
-    --theme-blue: #3A738F;
+    --theme-blue: #3a738f;
     --facebook-blue: #3b5998;
     --twitter-blue: #00aced;
     --instagram-violet: #bc2a8d;
@@ -86,3 +86,4 @@
 @import './styles/homebutton.css';
 @import './styles/profile.css';
 @import './styles/projectcard.css';
+@import './styles/projectdrawer.css';
