@@ -1,5 +1,8 @@
 import React from 'react'
 
+// import child components
+import AboutNav from './AboutNav'
+
 export default () => (
-    <h1>About</h1>
+    <AboutNav />
 )
