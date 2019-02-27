@@ -1,3 +1,37 @@
+.btn__close-drawer
+{
+    position: absolute;
+    top: .8rem;
+    right: .8rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    
+    border: none;
+    background: #fff;
+}
+.btn__close-drawer:hover,
+.btn__close-drawer:focus
+{
+    outline: none;
+    cursor: pointer;
+}
+.btn__close-drawer > img
+{
+    width: .8rem;
+    height: .8rem;
+
+    opacity: .6;
+    transition: opacity .2s;
+}
+.btn__close-drawer:hover > img
+{
+    opacity: 1;
+}
+
 .project-drawer
 {
     z-index: 2000;
@@ -16,10 +50,6 @@
     background-color: #fff;
 
     transition: right .4s ease-out;
-}
-.slide-in
-{
-    right: 0;
 }
 
 .project-drawer__title
@@ -40,6 +70,36 @@
     font-size: .9rem;
     padding: 2rem 0;
     line-height: 150%;
+}
+
+@media screen and (max-width: 788px)
+{
+    .project-drawer
+    {
+        right: -80%;
+        width: 60%;
+    }
+}
+@media screen and (max-width: 597px)
+{
+    .project-drawer
+    {
+        right: -100%;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 449px)
+{
+    .project-drawer
+    {
+        right: -110%;
+        width: 86%;
+    }
+}
+
+.slide-in
+{
+    right: 0;
 }
 
 @import './projectdrawerlinks.css';

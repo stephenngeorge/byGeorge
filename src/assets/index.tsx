@@ -1,4 +1,5 @@
 import about_icon from './about_icon.png'
+import close_icon from './close_icon.png'
 import code_icon from './code_icon.png'
 import esther_screenshot from './esther_screenshot.png'
 import facebook_logo from './facebook_logo.png'
@@ -14,6 +15,7 @@ import twitter_logo from './twitter_logo.png'
 
 export {
     about_icon,
+    close_icon,
     code_icon,
     esther_screenshot,
     facebook_logo,

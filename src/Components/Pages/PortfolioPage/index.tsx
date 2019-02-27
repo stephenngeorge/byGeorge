@@ -59,7 +59,7 @@ export default () => {
             }
             {
                 Object.keys(focusProject).length !== 0 &&
-                <ProjectDrawer project={ focusProject } />
+                <ProjectDrawer project={ focusProject } setFocusProject={ setFocusProject } />
             }
         </div>
     )
