@@ -11,16 +11,16 @@ import { close_icon } from '../../../assets'
 export default (props: any) => {
     useEffect(() => {
         const drawer = document.querySelector('.project-drawer')
-        if (drawer !== null) drawer.classList.add('slide-in')
+        if (drawer !== null) drawer.classList.add('slide-in-from-right')
 
         return () => {
-            if (drawer !== null) drawer.classList.remove('slide-in')
+            if (drawer !== null) drawer.classList.remove('slide-in-from-right')
         }
     })
 
     const closeDrawer = () => {
         const drawer = document.querySelector('.project-drawer')
-        if (drawer !== null) drawer.classList.remove('slide-in')
+        if (drawer !== null) drawer.classList.remove('slide-in-from-right')
         setTimeout(() => setFocusProject({}), 400)
     }
 
