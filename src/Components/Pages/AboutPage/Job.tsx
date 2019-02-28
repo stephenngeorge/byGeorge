@@ -8,9 +8,9 @@ export default (props: any) => {
                 <h3>{ job.title }</h3>
                 <p>{ job.dateFrom } - { job.dateTo }</p>
             </div>
-            <p>{ job.location }</p>
+            <p className='job-location'>{ job.location }</p>
             {
-                job.summary.map((bullet: string) => <p key={ bullet }>{ bullet }</p>)
+                job.summary.map((bullet: string) => <p className='job-summary' key={ bullet }>{ bullet }</p>)
             }
         </div>
     )
