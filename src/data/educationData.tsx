@@ -32,7 +32,7 @@ const education: Institutions[] = [
         summary: [
             {
                 subject: 'Recital Diploma, Classical Guitar',
-                grade: 'pass'
+                grade: 'Pass'
             }
         ]
     },

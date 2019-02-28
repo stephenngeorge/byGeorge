@@ -17,16 +17,25 @@ export default () => {
 
     const [activeDrawer, setActiveDrawer] = useState('')
 
+
+    const closeDrawer = () => {
+        let drawer = document.querySelector('.about-page__drawer')
+        if (drawer !== null) {
+            drawer.classList.remove('slide-in-from-left')
+            setTimeout(() => setActiveDrawer(''), 400)
+        }
+    }
+
     let renderDrawer = () => {
         switch(activeDrawer) {
             case 'WORK_HISTORY':
-                return <WorkHistory jobs={ jobs } icon={ work_icon } />
+                return <WorkHistory jobs={ jobs } icon={ work_icon } closeDrawer={ closeDrawer } />
             case 'EDUCATION':
-                return <Education institutions={ education } icon={ education_icon } />
+                return <Education institutions={ education } icon={ education_icon } closeDrawer={ closeDrawer } />
             case 'SKILLS':
-                return <Skills skills={ skills } icon={ skills_icon } />
+                return <Skills skills={ skills } icon={ skills_icon } closeDrawer={ closeDrawer } />
             case 'INTERESTS':
-                return <Interests interests={ interests } icon={ interests_icon } />
+                return <Interests interests={ interests } icon={ interests_icon } closeDrawer={ closeDrawer } />
             case '':
                 return null
             default: return null
@@ -36,7 +45,10 @@ export default () => {
 
     return (
         <Fragment>
-            <AboutNav setActiveDrawer={ setActiveDrawer } />
+            <AboutNav   setActiveDrawer={ setActiveDrawer }
+                        closeDrawer={ closeDrawer }
+                        activeDrawer={ activeDrawer }
+            />
             {
                 drawer
             }

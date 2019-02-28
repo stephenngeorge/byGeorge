@@ -4,7 +4,7 @@ export default (props: any) => {
     let { job } = props
     return (
         <div className='job'>
-            <div className='job-header'>
+            <div className='job__header'>
                 <h3>{ job.title }</h3>
                 <p>{ job.dateFrom } - { job.dateTo }</p>
             </div>

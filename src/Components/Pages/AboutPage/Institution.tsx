@@ -7,12 +7,19 @@ export default (props: any) => {
         <div className='institution'>
             <div className='institution__header'>
                 <h3>{ institution.headline }</h3>
-                <p>{ institution.dateFrom } - { institution.dateTo }</p>
+                {
+                    institution.dateFrom !== institution.dateTo &&
+                    <p>{ institution.dateFrom } - { institution.dateTo }</p>
+                }
+                {
+                    institution.dateFrom === institution.dateTo &&
+                    <p>{ institution.dateTo }</p>
+                }
             </div>
-            <p>{ institution.location }</p>
+            <p className='institution-location'>{ institution.location }</p>
             {
                 institution.summary.map((qualification: any, i: number) => 
-                                            <p key={ i }>
+                                            <p className='institution-qualification' key={ i }>
                                                 { qualification.subject } : { qualification.grade }
                                             </p>)
             }
