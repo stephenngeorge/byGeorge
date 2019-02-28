@@ -18,7 +18,7 @@ export default (props: any) => (
             <img src={ education_icon } alt='education' />
             <p className='tag'>education</p>
         </li>
-        <li className='about-nav__item'>
+        <li className='about-nav__item' onClick={ () => props.setActiveDrawer('SKILLS') }>
             <img src={ skills_icon } alt='skills' />
             <p className='tag'>skills</p>
         </li>

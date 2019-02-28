@@ -4,9 +4,10 @@ import React, { Fragment, useState } from 'react'
 import AboutNav from './AboutNav'
 import WorkHistory from './WorkHistory'
 import Education from './Education'
+import Skills from './Skills'
 
 // import data
-import { jobs, education } from '../../../data'
+import { jobs, education, skills } from '../../../data'
 
 export default () => {
 
@@ -18,6 +19,8 @@ export default () => {
                 return <WorkHistory jobs={ jobs } />
             case 'EDUCATION':
                 return <Education institutions={ education } />
+            case 'SKILLS':
+                return <Skills skills={ skills } />
             case '':
                 return null
             default: return null
