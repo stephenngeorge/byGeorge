@@ -5,9 +5,10 @@ import AboutNav from './AboutNav'
 import WorkHistory from './WorkHistory'
 import Education from './Education'
 import Skills from './Skills'
+import Interests from './Interests'
 
 // import data
-import { jobs, education, skills } from '../../../data'
+import { education, interests, jobs, skills } from '../../../data'
 
 export default () => {
 
@@ -21,6 +22,8 @@ export default () => {
                 return <Education institutions={ education } />
             case 'SKILLS':
                 return <Skills skills={ skills } />
+            case 'INTERESTS':
+                return <Interests interests={ interests } />
             case '':
                 return null
             default: return null
