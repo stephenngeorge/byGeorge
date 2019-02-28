@@ -4,9 +4,10 @@ import React from 'react'
 import Job from './Job'
 
 export default (props: any) => {
-    let { jobs } = props
+    let { jobs, icon } = props
     return (
         <div className='about-page__jobs about-page__drawer'>
+            <img src={ icon } alt='work history' />
             <h2>Work History</h2>
             {
                 jobs.map((job: any) => <Job job={ job } key={ job.title } />)

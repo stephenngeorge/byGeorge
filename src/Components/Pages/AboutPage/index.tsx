@@ -10,6 +10,9 @@ import Interests from './Interests'
 // import data
 import { education, interests, jobs, skills } from '../../../data'
 
+// import assets
+import { education_icon, interests_icon, skills_icon, work_icon } from '../../../assets'
+
 export default () => {
 
     const [activeDrawer, setActiveDrawer] = useState('')
@@ -17,13 +20,13 @@ export default () => {
     let renderDrawer = () => {
         switch(activeDrawer) {
             case 'WORK_HISTORY':
-                return <WorkHistory jobs={ jobs } />
+                return <WorkHistory jobs={ jobs } icon={ work_icon } />
             case 'EDUCATION':
-                return <Education institutions={ education } />
+                return <Education institutions={ education } icon={ education_icon } />
             case 'SKILLS':
-                return <Skills skills={ skills } />
+                return <Skills skills={ skills } icon={ skills_icon } />
             case 'INTERESTS':
-                return <Interests interests={ interests } />
+                return <Interests interests={ interests } icon={ interests_icon } />
             case '':
                 return null
             default: return null
