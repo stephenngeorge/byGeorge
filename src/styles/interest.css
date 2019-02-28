@@ -1,0 +1,19 @@
+.interest
+{
+    width: 80%;
+
+    margin-bottom: 1rem;
+}
+
+.interest-title
+{
+    font-family: var(--font-sans-serif);
+    color: var(--theme-blue);
+    font-size: 1rem;
+}
+.interest-info
+{
+    font-family: var(--font-serif);
+    font-size: .9rem;
+    color: #555;
+}

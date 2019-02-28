@@ -13,7 +13,7 @@ const interests: Interest[] = [
     },
     {
         title: 'Politics',
-        info: 'Member of Liberal Democrats & Liberl Democrat Christian Forum'
+        info: 'Member of Liberal Democrats & Liberal Democrat Christian Forum'
     },
     {
         title: 'Music'

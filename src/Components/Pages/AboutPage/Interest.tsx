@@ -5,10 +5,10 @@ export default (props: any) => {
 
     return (
         <div className='interest'>
-            <p>{ interest.title }</p>
+            <p className='interest-title'>{ interest.title }</p>
             {
                 !!interest.info &&
-                <p>{ interest.info }</p>
+                <p className='interest-info'>{ interest.info }</p>
             }
         </div>
     )
