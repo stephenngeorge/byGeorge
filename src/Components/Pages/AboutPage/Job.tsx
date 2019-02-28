@@ -10,7 +10,7 @@ export default (props: any) => {
             </div>
             <p>{ job.location }</p>
             {
-                job.summary.map((bullet: string) => <p>{ bullet }</p>)
+                job.summary.map((bullet: string) => <p key={ bullet }>{ bullet }</p>)
             }
         </div>
     )

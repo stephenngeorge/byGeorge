@@ -3,9 +3,10 @@ import React, { Fragment, useState } from 'react'
 // import child components
 import AboutNav from './AboutNav'
 import WorkHistory from './WorkHistory'
+import Education from './Education'
 
 // import data
-import { jobs } from '../../../data'
+import { jobs, education } from '../../../data'
 
 export default () => {
 
@@ -15,6 +16,8 @@ export default () => {
         switch(activeDrawer) {
             case 'WORK_HISTORY':
                 return <WorkHistory jobs={ jobs } />
+            case 'EDUCATION':
+                return <Education institutions={ education } />
             case '':
                 return null
             default: return null
