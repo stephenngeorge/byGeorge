@@ -8,9 +8,9 @@ import {
     work_icon
 } from '../../../assets'
 
-export default () => (
+export default (props: any) => (
     <ul className='about-nav'>
-        <li className='about-nav__item'>
+        <li className='about-nav__item' onClick={ () => props.setActiveDrawer('WORK_HISTORY') }>
             <img src={ work_icon } alt='work histroy' />
             <p className='tag'>work history</p>
         </li>

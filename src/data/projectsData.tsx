@@ -23,7 +23,7 @@ const projects: Project[] = [
         path: '/',
         repo: 'https://github.com/stephenngeorge/portfolio',
         img: portfolio_screenshot,
-        techStack: ['react', 'typescript', 'create-react-app', 'react-spring']
+        techStack: ['react', 'typescript', 'create-react-app', 'react hooks']
     },
     {
         title: 'esther ministry',
