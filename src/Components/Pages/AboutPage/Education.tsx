@@ -8,8 +8,8 @@ export default (props: any) => {
 
     return (
         <div className='about-page__education about-page__drawer'>
-            <img src={ icon } alt='education' />
-            <h2>Education</h2>
+            <img className='drawer-icon' src={ icon } alt='education' />
+            <h2 className='drawer-title'>Education</h2>
             {
                 institutions.map((institution: any) => <Institution key={ institution.location } institution={ institution } />)
             }

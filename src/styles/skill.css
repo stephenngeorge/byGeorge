@@ -1,0 +1,24 @@
+.skill
+{
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 1.4rem;
+}
+
+.skill > p
+{
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--theme-blue);
+}
+
+.skill > img
+{
+    max-width: 2rem;
+    max-height: 2rem;
+}

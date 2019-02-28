@@ -8,8 +8,8 @@ export default (props: any) => {
     
     return (
         <div className='about-page__interests about-page__drawer'>
-            <img src={ icon } alt='interests' />
-            <h2>Interests</h2>
+            <img className='drawer-icon' src={ icon } alt='interests' />
+            <h2 className='drawer-title'>Interests</h2>
             {
                 interests.map((interest: any, i: number) => <Interest key={ i } interest={ interest } />)
             }
