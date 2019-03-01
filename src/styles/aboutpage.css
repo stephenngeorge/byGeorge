@@ -42,16 +42,12 @@
     margin-bottom: 2rem;
 }
 
-.slide-in-from-left
-{
-    left: 0;
-}
-
 @media screen and (max-width: 989px)
 {
     .about-page__drawer
     {
         width: 60%;
+        left: -70%;
     }
 }
 @media screen and (max-width: 829px)
@@ -59,6 +55,7 @@
     .about-page__drawer
     {
         width: 70%;
+        left: -75%;
     }
 }
 @media screen and (max-width: 709px)
@@ -66,6 +63,7 @@
     .about-page__drawer
     {
         width: 75%;
+        left: -80%;
     }
 }
 @media screen and (max-width: 659px)
@@ -73,6 +71,7 @@
     .about-page__drawer
     {
         width: 85%;
+        left: -90%;
     }
 }
 @media screen and (max-width: 569px)
@@ -80,6 +79,7 @@
     .about-page__drawer
     {
         width: 100%;
+        left: -110%;
     }
 }
 
@@ -103,6 +103,11 @@
     {
         padding: 3rem .5rem;
     }
+}
+
+.slide-in-from-left
+{
+    left: 0;
 }
 
 @import './skill.css';

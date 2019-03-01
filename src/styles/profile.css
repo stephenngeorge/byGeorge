@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 90%;
+    max-width: 50rem;
     margin: 0 auto;
 
     padding-bottom: 2.5rem;
@@ -71,6 +72,7 @@
         max-width: 80%;
         padding-top: 3rem;
         padding-left: 0;
+        text-align: center;
     }
 }
 
@@ -84,11 +86,6 @@
 
 @media screen and (max-width: 452px)
 {
-    .profile__details
-    {
-        text-align: center;
-    }
-
     .profile__details > h1
     {
         font-size: 1.8rem;
