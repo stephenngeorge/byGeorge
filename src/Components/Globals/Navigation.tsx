@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 // import assets
@@ -15,6 +15,17 @@ import {
 export default () => {
 
     const [active, setActive] = useState(false)
+
+    useEffect(() => {
+        let toggleNav = (e: any) => {
+            if (e.key === "/") {
+                setActive(!active)
+            }
+        }
+        window.addEventListener('keypress', toggleNav)
+
+        return () => window.removeEventListener('keypress', toggleNav)
+    }, [active])
 
     let rotate :string = !!active ? 'rotate' : ''
     let active_nav :string = !!active ? 'active' : ''

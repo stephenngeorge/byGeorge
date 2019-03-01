@@ -18,6 +18,15 @@ export default (props: any) => {
         }
     }, [props.project])
 
+    useEffect(() => {
+        const handleCloseDrawer = (e: any) => {
+            if (e.key === 'x' || e.key === '>') closeDrawer()
+        }
+        window.addEventListener('keypress', handleCloseDrawer)
+
+        return () => window.removeEventListener('keypress', handleCloseDrawer)
+    }, [])
+
     const closeDrawer = () => {
         const drawer = document.querySelector('.project-drawer')
         if (drawer !== null) {

@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 
 // import child components
 import AboutNav from './AboutNav'
@@ -16,6 +16,15 @@ import { education_icon, interests_icon, skills_icon, work_icon } from '../../..
 export default () => {
 
     const [activeDrawer, setActiveDrawer] = useState('')
+
+    useEffect(() => {
+        const handleCloseDrawer = (e: any) => {
+            if (e.key === 'x' || e.key === '<') closeDrawer()
+        }
+        window.addEventListener('keypress', handleCloseDrawer)
+
+        return () => window.removeEventListener('keypress', handleCloseDrawer)
+    }, [activeDrawer])
 
 
     const closeDrawer = () => {

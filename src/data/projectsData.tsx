@@ -21,7 +21,7 @@ const projects: Project[] = [
     },
     {
         title: 'stephen george portfolio',
-        description: 'This website was built to showcase my skills & experience in web development & design. This site was written in TypeScript and uses new features like react hooks. A deliberately minimalist design with consistent elements & behaviours help beautiful code become beautiful UI',
+        description: 'This website was built to showcase my skills & experience in web development & design. This site was written in TypeScript and uses new features like react hooks. A deliberately minimalist design with consistent elements & behaviours help beautiful code become beautiful UI. Toggle the menu with "/" & send the drawers back to where they came from with "x" or "<" / ">"',
         path: '/',
         repo: 'https://github.com/stephenngeorge/portfolio',
         img: portfolio_screenshot,
