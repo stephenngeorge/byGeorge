@@ -33,7 +33,7 @@ export default (props: any) => {
                 <img src={ close_icon } alt='close drawer' />
             </button>
             <ProjectDrawerInfo title={ project.title } description={ project.description } />
-            <ProjectDrawerLinks path={ project.path } repo={ project.repo } />
+            <ProjectDrawerLinks path={ project.path } repo={ project.repo } live={ project.live } />
             <ProjectDrawerTech techStack={ project.techStack } />
         </div>
     )

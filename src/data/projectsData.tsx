@@ -6,7 +6,8 @@ interface Project {
     path: string,
     repo: string,
     img: string,
-    techStack: string[]
+    techStack: string[],
+    live: boolean
 }
 const projects: Project[] = [        
     {
@@ -15,7 +16,8 @@ const projects: Project[] = [
         path: 'http://www.neilgeorgephotography.co.uk/',
         repo: 'https://github.com/stephenngeorge/neilgeorgephotography',
         img: ngphoto_screenshot,
-        techStack: ['react', 'create-react-app', 'node', 'express', 'firebase', 'react-spring', 'redux', 'heroku']
+        techStack: ['react', 'create-react-app', 'node', 'express', 'firebase', 'react-spring', 'redux', 'heroku'],
+        live: true
     },
     {
         title: 'stephen george portfolio',
@@ -23,7 +25,8 @@ const projects: Project[] = [
         path: '/',
         repo: 'https://github.com/stephenngeorge/portfolio',
         img: portfolio_screenshot,
-        techStack: ['react', 'typescript', 'create-react-app', 'react hooks']
+        techStack: ['react', 'typescript', 'create-react-app', 'react hooks'],
+        live: true
     },
     {
         title: 'esther ministry',
@@ -31,7 +34,8 @@ const projects: Project[] = [
         path: 'http://estherministry.org.uk/',
         repo: 'https://github.com/stephenngeorge/estherministryreact',
         img: esther_screenshot,
-        techStack: ['react', 'react-spring', 'create-react-app', 'GoDaddy']
+        techStack: ['react', 'react-spring', 'create-react-app', 'GoDaddy'],
+        live: true
     }
 ]
 

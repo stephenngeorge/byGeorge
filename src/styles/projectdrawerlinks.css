@@ -71,3 +71,18 @@
     opacity: 1;
     top: 130%;
 }
+
+.inactive
+{
+    opacity: .5;
+    background-color: #888;
+}
+.inactive > p
+{
+    display: none;
+}
+.inactive > a:hover
+{
+    transform: rotate(0);
+    cursor: auto;
+}

@@ -4,11 +4,13 @@ import React from 'react'
 import { code_icon, home_icon } from '../../../assets'
 
 export default (props: any) => {
-    let { path, repo } = props
+    let { path, repo, live } = props
+    let projectLink = !!live ? path : 'javascript:void(0)'
+    let inactive = !!live ? '' : 'inactive'
     return (
         <ul className='project-drawer__links'>
-            <li className='project-drawer__links--item' id='project-drawer__links--website'>
-                <a href={ path } target='_blank'>
+            <li className={`project-drawer__links--item ${inactive}`} id='project-drawer__links--website'>
+                <a href={ projectLink } target='_blank'>
                     <img src={ home_icon } alt='visit website' />
                 </a>
                 <p>go to project</p>
