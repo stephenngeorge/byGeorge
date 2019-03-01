@@ -18,7 +18,7 @@ export default (props: any) => {
         }
         else if (activeDrawer !== '') {
             closeDrawer()
-            setTimeout( () => setActiveDrawer(drawer), 450)
+            setTimeout( () => setActiveDrawer(drawer), 410)
         }
         else {
             setActiveDrawer(drawer)

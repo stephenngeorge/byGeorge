@@ -15,6 +15,7 @@ export default () => {
             {
                 projects.map(project => <ProjectCard    key={ project.title }
                                                         project={ project }
+                                                        focusProject={ focusProject }
                                                         setFocusProject={ setFocusProject }
                                         />)
             }

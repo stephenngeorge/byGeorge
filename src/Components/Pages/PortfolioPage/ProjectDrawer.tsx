@@ -16,12 +16,14 @@ export default (props: any) => {
         return () => {
             if (drawer !== null) drawer.classList.remove('slide-in-from-right')
         }
-    })
+    }, [props.project])
 
     const closeDrawer = () => {
         const drawer = document.querySelector('.project-drawer')
-        if (drawer !== null) drawer.classList.remove('slide-in-from-right')
-        setTimeout(() => setFocusProject({}), 400)
+        if (drawer !== null) {
+            drawer.classList.remove('slide-in-from-right')
+            setTimeout(() => setFocusProject({}), 400)
+        }
     }
 
     let { project, setFocusProject } = props

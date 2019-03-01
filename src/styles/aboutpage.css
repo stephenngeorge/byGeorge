@@ -47,6 +47,64 @@
     left: 0;
 }
 
+@media screen and (max-width: 989px)
+{
+    .about-page__drawer
+    {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 829px)
+{
+    .about-page__drawer
+    {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 709px)
+{
+    .about-page__drawer
+    {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 659px)
+{
+    .about-page__drawer
+    {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 569px)
+{
+    .about-page__drawer
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 499px)
+{
+    .about-page__drawer
+    {
+        padding: 3rem 2rem;
+    }
+}
+@media screen and (max-width: 459px)
+{
+    .about-page__drawer
+    {
+        padding: 3rem 1rem;
+    }
+}
+@media screen and (max-width: 423px)
+{
+    .about-page__drawer
+    {
+        padding: 3rem .5rem;
+    }
+}
+
 @import './skill.css';
 @import './interest.css';
 @import './job.css';
