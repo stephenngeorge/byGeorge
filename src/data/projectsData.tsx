@@ -1,4 +1,4 @@
-import { esther_screenshot, ngphoto_screenshot, portfolio_screenshot } from '../assets'
+import { esther_screenshot, ngphoto_screenshot, portfolio_screenshot, studi_screenshot } from '../assets'
 
 interface Project {
     title: string,
@@ -36,6 +36,15 @@ const projects: Project[] = [
         img: esther_screenshot,
         techStack: ['react', 'react-spring', 'create-react-app', 'GoDaddy'],
         live: true
+    },
+    {
+        title: 'studi',
+        description: 'Studi is in its early stages of development. The vision is for a learning app that goes beyond traditional flashcard or note-taking apps & integrates everything to make studying & memorising information as streamlined as possible.',
+        path: '',
+        repo: 'https://github.com/stephenngeorge/cards-app',
+        img: studi_screenshot,
+        techStack: ['node', 'express', 'graphql', 'mongoose', 'mongodb', 'react'],
+        live: false
     }
 ]
 

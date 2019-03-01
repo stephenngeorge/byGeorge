@@ -43,21 +43,28 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-@media screen and (max-width: 880px)
+@media screen and (max-width: 949px)
 {
     .portfolio-page
     {
         flex-direction: column;
         max-height: 60rem;
         justify-content: flex-start;
-        padding: 8rem;
+        padding: 8rem 10rem;
     }
 }
-@media screen and (max-width: 839px)
+@media screen and (max-width: 899px)
 {
     .portfolio-page
     {
-        padding: 8rem 6rem;
+        padding: 8rem;
+    }
+}
+@media screen and (max-width: 849px)
+{
+    .portfolio-page
+    {
+        padding: 8rem 5rem;
     }
 }
 @media screen and (max-width: 770px)

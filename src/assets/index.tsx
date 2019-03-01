@@ -22,6 +22,7 @@ import profile_pic from './profile_pic.jpg'
 import react_logo from './react_logo.png'
 import sass_logo from './sass_logo.png'
 import skills_icon from './skills_icon.png'
+import studi_screenshot from './studi_screenshot.png'
 import twitter_logo from './twitter_logo.png'
 import work_icon from './work_icon.png'
 
@@ -50,6 +51,7 @@ export {
     react_logo,
     sass_logo,
     skills_icon,
+    studi_screenshot,
     twitter_logo,
     work_icon
 }

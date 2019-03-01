@@ -1,8 +1,8 @@
 .project-card
 {
     position: relative;
-    width: calc(100% / 4);
-    height: 24rem;
+    width: 12rem;
+    height: 18rem;
     overflow: hidden;
     margin: 1rem;
 
@@ -76,13 +76,12 @@
     opacity: 1;
     top: 0;
 }
-
-
 @media screen and (max-width: 949px)
 {
     .project-card
     {
-        height: 22rem;
+        width: 16rem;
+        height: 24rem;
     }
 }
 @media screen and (max-width: 880px)
