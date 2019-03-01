@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 // import child components
 import Profile from './Profile'
 
-export default () => (
-    <div className='home-page'>
-        <Profile />
-    </div>
-)
+export default () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
+    return (
+        <div className='home-page'>
+            <Profile />
+        </div>
+    )
+}

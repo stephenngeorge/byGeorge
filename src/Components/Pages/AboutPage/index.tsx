@@ -18,6 +18,10 @@ export default () => {
     const [activeDrawer, setActiveDrawer] = useState('')
 
     useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
+    useEffect(() => {
         const handleCloseDrawer = (e: any) => {
             if (e.key === 'x' || e.key === '<') closeDrawer()
         }

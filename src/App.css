@@ -34,13 +34,6 @@
     margin: 0 auto;
     background-color: #fff;
 }
-@media screen and (max-width: 900px)
-{
-    .home-page
-    {
-        padding-top: 2rem;
-    }
-}
 
 .portfolio-page
 {

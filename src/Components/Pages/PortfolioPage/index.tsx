@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 // import child components
 import ProjectCard from './ProjectCard'
@@ -9,6 +9,10 @@ import { projects } from '../../../data'
 export default () => {
 
     let [focusProject, setFocusProject] = useState({})
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <div className='portfolio-page'>
