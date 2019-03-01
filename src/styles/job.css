@@ -39,4 +39,5 @@
     font-family: var(--font-sans-serif);
     font-size: .9rem;
     text-align: left;
+    line-height: 140%;
 }
