@@ -12,6 +12,16 @@ export default () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
+        let portfolioPage = document.querySelector('.portfolio-page')
+        if (portfolioPage !== null) {
+            portfolioPage.classList.add('fade-in')
+        }
+
+        return () => {
+            if (portfolioPage !== null) {
+                portfolioPage.classList.remove('fade-in')
+            }
+        }
     }, [])
 
     return (

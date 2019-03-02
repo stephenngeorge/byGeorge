@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 // import assets
 import {
@@ -9,6 +9,20 @@ import {
 } from '../../../assets'
 
 export default (props: any) => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+        let aboutNav = document.querySelector('.about-nav')
+        if (aboutNav !== null) {
+            aboutNav.classList.add('fade-in')
+        }
+
+        return () => {
+            if (aboutNav !== null) {
+                aboutNav.classList.remove('fade-in')
+            }
+        }
+    }, [])
 
     const handleClick = (drawer: string) => {
         let { activeDrawer, setActiveDrawer, closeDrawer } = props
