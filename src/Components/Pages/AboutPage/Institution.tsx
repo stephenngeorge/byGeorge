@@ -1,6 +1,16 @@
 import React from 'react'
 
-export default (props: any) => {
+interface Props {
+    institution: {
+        headline: string,
+        location: string,
+        dateFrom: string,
+        dateTo: string,
+        summary: string[]
+    }
+}
+
+export default (props: Props) => {
     let { institution } = props
 
     return (

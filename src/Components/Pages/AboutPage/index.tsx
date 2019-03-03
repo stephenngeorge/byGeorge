@@ -11,7 +11,12 @@ import Interests from './Interests'
 import { education, interests, jobs, skills } from '../../../data'
 
 // import assets
-import { education_icon, interests_icon, skills_icon, work_icon } from '../../../assets'
+import {
+    education_icon,
+    interests_icon,
+    skills_icon,
+    work_icon
+} from '../../../assets'
 
 export default () => {
 
@@ -39,6 +44,7 @@ export default () => {
         }
     }
 
+    // define which component to render based on activeDrawer state
     let renderDrawer = () => {
         switch(activeDrawer) {
             case 'WORK_HISTORY':

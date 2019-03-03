@@ -1,6 +1,16 @@
 import React from 'react'
 
-export default (props: any) => {
+interface Props {
+    job: {
+        title: string,
+        location: string,
+        summary: string[],
+        dateFrom: string,
+        dateTo: string
+    }
+}
+
+export default (props: Props) => {
     let { job } = props
     return (
         <div className='job'>

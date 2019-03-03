@@ -1,6 +1,13 @@
 import React from 'react'
 
-export default (props: any) => {
+interface Props {
+    skill: {
+        name: string,
+        logo: string
+    }
+}
+
+export default (props: Props) => {
     let { skill } = props
 
     return (

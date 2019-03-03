@@ -8,6 +8,20 @@ import ProjectDrawerTech from './ProjectDrawerTech'
 // import assets
 import { close_icon } from '../../../assets'
 
+interface Project {
+    title?: string,
+    description?: string,
+    path?: string,
+    repo?: string,
+    img?: string,
+    techStack?: string[],
+    live?: boolean
+}
+interface Props {
+    project: Project,
+    setFocusProject({}: Project): any
+}
+
 export default (props: any) => {
     useEffect(() => {
         const drawer = document.querySelector('.project-drawer')

@@ -8,7 +8,13 @@ import {
     work_icon
 } from '../../../assets'
 
-export default (props: any) => {
+interface Props {
+    activeDrawer: string,
+    setActiveDrawer(drawer: string): any,
+    closeDrawer(): any
+}
+
+export default (props: Props) => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -26,14 +32,16 @@ export default (props: any) => {
 
     const handleClick = (drawer: string) => {
         let { activeDrawer, setActiveDrawer, closeDrawer } = props
-        
+        // check if same drawer button is being clicked again
         if (activeDrawer === drawer) {
             closeDrawer()
         }
+        // check if there is already a different drawer rendered & render new draw instead
         else if (activeDrawer !== '') {
             closeDrawer()
             setTimeout( () => setActiveDrawer(drawer), 410)
         }
+        // if no drawers rendered, render drawer passed in
         else {
             setActiveDrawer(drawer)
         }

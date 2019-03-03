@@ -1,6 +1,11 @@
 import React, { Fragment } from 'react'
 
-export default (props: any) => {
+interface Props {
+    title: string,
+    description: string
+}
+
+export default (props: Props) => {
     let { title, description } = props
     return (
         <Fragment>

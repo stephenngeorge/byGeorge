@@ -6,7 +6,13 @@ import Job from './Job'
 // import assets
 import { close_icon } from '../../../assets'
 
-export default (props: any) => {
+interface Props {
+    jobs: any[],
+    icon: string,
+    closeDrawer(): any
+}
+
+export default (props: Props) => {
     let { jobs, icon, closeDrawer } = props
 
     useEffect(() => {

@@ -6,7 +6,13 @@ import Interest from './Interest'
 // import assets
 import { close_icon } from '../../../assets'
 
-export default (props: any) => {
+interface Props {
+    interests: any[],
+    icon: string,
+    closeDrawer(): any 
+}
+
+export default (props: Props) => {
     let { interests, icon, closeDrawer } = props
 
     useEffect(() => {

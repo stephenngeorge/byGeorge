@@ -3,8 +3,15 @@ import React from 'react'
 // import assets
 import { code_icon, home_icon } from '../../../assets'
 
-export default (props: any) => {
+interface Props {
+    path: string,
+    repo: string,
+    live: boolean
+}
+
+export default (props: Props) => {
     let { path, repo, live } = props
+
     let projectLink = !!live ? path : 'javascript:void(0)'
     let inactive = !!live ? '' : 'inactive'
     return (

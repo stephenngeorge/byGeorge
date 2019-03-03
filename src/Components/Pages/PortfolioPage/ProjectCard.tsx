@@ -1,6 +1,21 @@
 import React from 'react'
 
-export default (props: any) => {
+interface Project {
+    title?: string,
+    description?: string,
+    path?: string,
+    repo?: string,
+    img?: string,
+    techStack?: string[],
+    live?: boolean
+}
+interface Props {
+    project: Project,
+    focusProject: Project,
+    setFocusProject(project: Project): any
+}
+
+export default (props: Props) => {
     let { project, setFocusProject, focusProject } = props
 
     const handleClick = (selectProject: any) => {
