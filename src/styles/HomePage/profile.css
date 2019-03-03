@@ -107,3 +107,11 @@
         font-weight: 600;
     }
 }
+
+@media screen and (max-width: 372px)
+{
+    .profile__details > h1
+    {
+        font-size: 1.5rem;
+    }
+}

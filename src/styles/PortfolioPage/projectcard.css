@@ -1,7 +1,6 @@
 .project-card
 {
     position: relative;
-    /* width: 12rem; */
     flex-basis: 20%;
     height: 18rem;
     overflow: hidden;
@@ -9,6 +8,8 @@
 
     border-radius: .5rem;
     box-shadow: 0 0 4px 4px rgba(70, 70, 70, .4);
+
+    overflow: scroll;
 
     transition: box-shadow .4s;
 }
