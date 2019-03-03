@@ -2,7 +2,7 @@
   "name": "byGeorge",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://stephenngeorge.github.io/byGeorge",
+  "homepage": "https://stephenngeorge.github.io/bygeorge",
   "dependencies": {
     "@types/jest": "24.0.6",
     "@types/node": "11.9.4",
