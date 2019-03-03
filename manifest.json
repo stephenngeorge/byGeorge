@@ -1,0 +1,6 @@
+{
+  "short_name": "portfolio",
+  "name": "stephen george portfolio site",
+  "start_url": ".",
+  "display": "standalone"
+}
