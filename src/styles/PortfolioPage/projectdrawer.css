@@ -52,26 +52,6 @@
     transition: right .4s ease-out;
 }
 
-.project-drawer__title
-{
-    font-family: var(--font-sans-serif);
-    font-weight: 200;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    color: var(--theme-blue);
-    padding-bottom: 2rem;
-
-    border-bottom: 1px solid var(--theme-blue);
-}
-.project-drawer__description
-{
-    font-family: var(--font-serif);
-    font-weight: 300;
-    font-size: .9rem;
-    padding: 2rem 0;
-    line-height: 150%;
-}
-
 @media screen and (max-width: 788px)
 {
     .project-drawer
@@ -101,6 +81,3 @@
 {
     right: 0;
 }
-
-@import './projectdrawerlinks.css';
-@import './projectdrawtech.css';

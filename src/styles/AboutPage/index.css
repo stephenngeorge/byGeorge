@@ -110,7 +110,8 @@
     left: 0;
 }
 
-@import './skill.css';
+@import './aboutnav.css';
+@import './institution.css';
 @import './interest.css';
 @import './job.css';
-@import './institution.css';
+@import './skill.css';

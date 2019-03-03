@@ -20,81 +20,10 @@
     --font-serif: 'Roboto Slab', serif;
 }
 
-.home-page
-{
-    opacity: 0;
-    position: relative;
-    z-index: -1000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    top: 0;
-    left: 0;
-    margin: 0 auto;
-    background-color: #fff;
-
-    transition: opacity .6s;
-}
-
-.portfolio-page
-{
-    opacity: 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    transition: opacity .6s;
-}
-@media screen and (max-width: 949px)
-{
-    .portfolio-page
-    {
-        flex-direction: column;
-        max-height: 60rem;
-        justify-content: flex-start;
-        padding: 8rem 10rem;
-    }
-}
-@media screen and (max-width: 899px)
-{
-    .portfolio-page
-    {
-        padding: 8rem;
-    }
-}
-@media screen and (max-width: 849px)
-{
-    .portfolio-page
-    {
-        padding: 8rem 5rem;
-    }
-}
-@media screen and (max-width: 770px)
-{
-    .portfolio-page
-    {
-        max-height: 100%;
-    }
-}
-@media screen and (max-width: 450px)
-{
-    .portfolio-page
-    {
-        padding: 8rem 3rem;
-    }
-}
-
-@import './styles/nav.css';
-@import './styles/homebutton.css';
-@import './styles/profile.css';
-@import './styles/projectcard.css';
-@import './styles/projectdrawer.css';
-@import './styles/aboutpage.css';
-@import './styles/aboutnav.css';
+@import './styles/Globals/index.css';
+@import './styles/HomePage/index.css';
+@import './styles/AboutPage/index.css';
+@import './styles/PortfolioPage/index.css';
 
 .fade-in
 {

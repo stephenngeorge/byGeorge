@@ -1,0 +1,55 @@
+.portfolio-page
+{
+    opacity: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    transition: opacity .6s;
+}
+@media screen and (max-width: 949px)
+{
+    .portfolio-page
+    {
+        flex-direction: column;
+        max-height: 60rem;
+        justify-content: flex-start;
+        padding: 8rem 10rem;
+    }
+}
+@media screen and (max-width: 899px)
+{
+    .portfolio-page
+    {
+        padding: 8rem;
+    }
+}
+@media screen and (max-width: 849px)
+{
+    .portfolio-page
+    {
+        padding: 8rem 5rem;
+    }
+}
+@media screen and (max-width: 770px)
+{
+    .portfolio-page
+    {
+        max-height: 100%;
+    }
+}
+@media screen and (max-width: 450px)
+{
+    .portfolio-page
+    {
+        padding: 8rem 3rem;
+    }
+}
+
+@import './projectcard.css';
+@import './projectdrawer.css';
+@import './projectdrawerinfo.css';
+@import './projectdrawerlinks.css';
+@import './projectdrawertech.css';
