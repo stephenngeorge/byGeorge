@@ -15,7 +15,8 @@ export default () => (
             <p>
                 I am passionate about building things for the web &amp; making them 
                 beautiful in both their design &amp; the structure of their code. I 
-                love patterns, problem-solving, creating &amp; learning.
+                love patterns, problem-solving, creating &amp; learning. Based in 
+                South West London.
             </p>
         </div>
     </div>

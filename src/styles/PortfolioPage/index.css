@@ -1,50 +1,26 @@
 .portfolio-page
 {
     opacity: 0;
+    width: 80%;
+    max-width: 72rem;
     min-height: 100vh;
+    margin: 0 auto;
+
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
 
     transition: opacity .6s;
 }
-@media screen and (max-width: 949px)
+
+@media screen and (max-width: 1099px)
 {
     .portfolio-page
     {
-        flex-direction: column;
-        max-height: 60rem;
-        justify-content: flex-start;
-        padding: 8rem 10rem;
-    }
-}
-@media screen and (max-width: 899px)
-{
-    .portfolio-page
-    {
-        padding: 8rem;
-    }
-}
-@media screen and (max-width: 849px)
-{
-    .portfolio-page
-    {
-        padding: 8rem 5rem;
-    }
-}
-@media screen and (max-width: 770px)
-{
-    .portfolio-page
-    {
-        max-height: 100%;
-    }
-}
-@media screen and (max-width: 450px)
-{
-    .portfolio-page
-    {
-        padding: 8rem 3rem;
+        min-height: 0;
+        margin: 6rem auto;
+        width: 70%;
     }
 }
 
