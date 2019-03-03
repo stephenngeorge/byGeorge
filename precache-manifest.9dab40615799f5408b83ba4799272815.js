@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/mongo_logo.22a4b423.png"
   },
   {
-    "revision": "99198f10c09c349ea841",
-    "url": "/portfolio/static/css/main.8132611e.chunk.css"
+    "revision": "2580bb75c4078b53d1ed",
+    "url": "/portfolio/static/css/main.a3ce508b.chunk.css"
   },
   {
     "revision": "0fad4c0f10d57b530fe4",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/less_logo.bef677b3.png"
   },
   {
-    "revision": "99198f10c09c349ea841",
-    "url": "/portfolio/static/js/main.99198f10.chunk.js"
+    "revision": "2580bb75c4078b53d1ed",
+    "url": "/portfolio/static/js/main.2580bb75.chunk.js"
   },
   {
     "revision": "fa06116bced2ca19ca846d3d409031c9",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/studi_screenshot.e57829ed.png"
   },
   {
-    "revision": "27a2ac5bb9a1595f0c99cb5aa3993f92",
+    "revision": "d1563bf9042801ebe16d4fcb78246e46",
     "url": "/portfolio/index.html"
   }
 ];
