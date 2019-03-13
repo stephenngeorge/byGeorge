@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface Props {
-    techStack: string[]
+    techStack: string[] | undefined
 }
 
 export default (props: Props) => {
@@ -9,6 +9,7 @@ export default (props: Props) => {
     return (
         <ul className='project-drawer__techStack'>
             {
+                techStack !== undefined &&
                 techStack.map((tech: string, i: number) =>
                                 <li key={ i }
                                     className='project-drawer__techStack--tech'

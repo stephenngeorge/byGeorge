@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 
 interface Props {
-    title: string,
-    description: string
+    title: string | undefined,
+    description: string | undefined
 }
 
 export default (props: Props) => {

@@ -25,7 +25,7 @@ const projects: Project[] = [
         path: '/',
         repo: 'https://github.com/stephenngeorge/portfolio',
         img: portfolio_screenshot,
-        techStack: ['react', 'typescript', 'create-react-app', 'react hooks'],
+        techStack: ['react', 'typescript', 'create-react-app', 'react hooks', 'hammerjs', 'github pages'],
         live: true
     },
     {

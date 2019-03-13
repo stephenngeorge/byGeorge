@@ -4,9 +4,9 @@ import React from 'react'
 import { code_icon, home_icon } from '../../../assets'
 
 interface Props {
-    path: string,
-    repo: string,
-    live: boolean
+    path: string | undefined,
+    repo: string | undefined,
+    live: boolean | undefined
 }
 
 export default (props: Props) => {
