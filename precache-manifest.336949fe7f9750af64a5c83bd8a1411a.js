@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/bygeorge/static/media/mongo_logo.22a4b423.png"
   },
   {
-    "revision": "5d1d4f1df9dbfc12e2b6",
-    "url": "/bygeorge/static/css/main.a3ce508b.chunk.css"
+    "revision": "44dd141da19c63a30da4",
+    "url": "/bygeorge/static/css/main.1bd638c3.chunk.css"
   },
   {
     "revision": "c9aa0d2a47d053f9a502",
     "url": "/bygeorge/static/js/runtime~main.c9aa0d2a.js"
   },
   {
-    "revision": "d4d57dbfdad32693299a",
-    "url": "/bygeorge/static/js/2.d4d57dbf.chunk.js"
+    "revision": "bdc540267a59c9c47575",
+    "url": "/bygeorge/static/js/2.bdc54026.chunk.js"
   },
   {
     "revision": "198682072909c94a3aea7dcda09fe838",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/bygeorge/static/media/less_logo.bef677b3.png"
   },
   {
-    "revision": "5d1d4f1df9dbfc12e2b6",
-    "url": "/bygeorge/static/js/main.5d1d4f1d.chunk.js"
+    "revision": "44dd141da19c63a30da4",
+    "url": "/bygeorge/static/js/main.44dd141d.chunk.js"
   },
   {
     "revision": "fa06116bced2ca19ca846d3d409031c9",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/bygeorge/static/media/studi_screenshot.e57829ed.png"
   },
   {
-    "revision": "df3a1336f3233ee73da4861f0a8221da",
+    "revision": "af99494241318dca0eaee953bf93bcb7",
     "url": "/bygeorge/index.html"
   }
 ];
