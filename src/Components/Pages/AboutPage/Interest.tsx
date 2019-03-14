@@ -1,13 +1,9 @@
 import React from 'react'
+import { IPropsInterest } from './InterestsType'
 
-interface Props {
-    interest: {
-        title: string,
-        info?: string
-    }
-}
 
-export default (props: Props) => {
+
+export default (props: IPropsInterest) => {
     let { interest } = props
 
     return (

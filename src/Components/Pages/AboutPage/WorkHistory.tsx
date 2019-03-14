@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Hammer from 'react-hammerjs'
+import { IPropsWorkHistory } from './WorkHistoryType'
 
 // import child components
 import Job from './Job'
@@ -7,13 +8,7 @@ import Job from './Job'
 // import assets
 import { close_icon } from '../../../assets'
 
-interface Props {
-    jobs: any[],
-    icon: string,
-    closeDrawer(): any
-}
-
-export default (props: Props) => {
+export default (props: IPropsWorkHistory) => {
     let { jobs, icon, closeDrawer } = props
 
     useEffect(() => {

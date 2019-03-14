@@ -1,13 +1,7 @@
 import React from 'react'
+import { IPropsSkill } from './SkillsType'
 
-interface Props {
-    skill: {
-        name: string,
-        logo: string
-    }
-}
-
-export default (props: Props) => {
+export default (props: IPropsSkill) => {
     let { skill } = props
 
     return (

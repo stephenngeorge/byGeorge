@@ -1,16 +1,7 @@
 import React from 'react'
+import { IProps } from './InstitutionType'
 
-interface Props {
-    institution: {
-        headline: string,
-        location: string,
-        dateFrom: string,
-        dateTo: string,
-        summary: string[]
-    }
-}
-
-export default (props: Props) => {
+export default (props: IProps) => {
     let { institution } = props
 
     return (

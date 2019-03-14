@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Hammer from 'react-hammerjs'
+import { IPropsSkills } from './SkillsType'
 
 // import child components
 import Skill from './Skill'
@@ -7,13 +8,7 @@ import Skill from './Skill'
 // import assets
 import { close_icon } from '../../../assets'
 
-interface Props {
-    skills: any[],
-    icon: string,
-    closeDrawer(): any
-}
-
-export default (props: Props) => {
+export default (props: IPropsSkills) => {
     let { skills, icon, closeDrawer } = props
 
     useEffect(() => {

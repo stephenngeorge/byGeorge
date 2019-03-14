@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { IProps } from './AboutNavType'
 
 // import assets
 import {
@@ -8,13 +9,7 @@ import {
     work_icon
 } from '../../../assets'
 
-interface Props {
-    activeDrawer: string,
-    setActiveDrawer(drawer: string): any,
-    closeDrawer(): any
-}
-
-export default (props: Props) => {
+export default (props: IProps) => {
 
     useEffect(() => {
         window.scrollTo(0, 0)

@@ -1,16 +1,7 @@
 import React from 'react'
+import { IPropsJob } from './WorkHistoryType'
 
-interface Props {
-    job: {
-        title: string,
-        location: string,
-        summary: string[],
-        dateFrom: string,
-        dateTo: string
-    }
-}
-
-export default (props: Props) => {
+export default (props: IPropsJob) => {
     let { job } = props
     return (
         <div className='job'>

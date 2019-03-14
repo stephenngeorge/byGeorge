@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Hammer from 'react-hammerjs'
+import { IProps } from './EducationType'
 
 // import child components
 import Institution from './Institution'
@@ -7,13 +8,7 @@ import Institution from './Institution'
 // import assets
 import { close_icon } from '../../../assets'
 
-interface Props {
-    institutions: any[],
-    icon: string,
-    closeDrawer(): any
-}
-
-export default (props: Props) => {
+export default (props: IProps) => {
     let { institutions, icon, closeDrawer } = props
 
     useEffect(() => {

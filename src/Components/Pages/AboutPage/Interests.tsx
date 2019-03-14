@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Hammer from 'react-hammerjs'
+import { IPropsInterests } from './InterestsType'
 
 // import child components
 import Interest from './Interest'
@@ -7,13 +8,7 @@ import Interest from './Interest'
 // import assets
 import { close_icon } from '../../../assets'
 
-interface Props {
-    interests: any[],
-    icon: string,
-    closeDrawer(): any 
-}
-
-export default (props: Props) => {
+export default (props: IPropsInterests) => {
     let { interests, icon, closeDrawer } = props
 
     useEffect(() => {
