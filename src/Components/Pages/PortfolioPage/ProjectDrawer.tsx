@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Hammer from 'react-hammerjs'
+import { IProps } from './ProjectDrawerType'
 
 // import child components
 import ProjectDrawerInfo from './ProjectDrawerInfo'
@@ -9,21 +10,7 @@ import ProjectDrawerTech from './ProjectDrawerTech'
 // import assets
 import { close_icon } from '../../../assets'
 
-interface Project {
-    title?: string | undefined,
-    description?: string | undefined,
-    path?: string | undefined,
-    repo?: string | undefined,
-    img?: string | undefined,
-    techStack?: string[] | undefined,
-    live?: boolean | undefined
-}
-interface Props {
-    project: Project,
-    setFocusProject({}: Project): any
-}
-
-export default (props: Props) => {
+export default (props: IProps) => {
     useEffect(() => {
         const drawer = document.querySelector('.project-drawer')
         if (drawer !== null) drawer.classList.add('slide-in-from-right')

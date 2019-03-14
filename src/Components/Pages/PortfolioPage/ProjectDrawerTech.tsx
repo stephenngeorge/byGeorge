@@ -1,10 +1,7 @@
 import React from 'react'
+import { IProps } from './ProjectDrawerTechType'
 
-interface Props {
-    techStack: string[] | undefined
-}
-
-export default (props: Props) => {
+export default (props: IProps) => {
     let { techStack } = props
     return (
         <ul className='project-drawer__techStack'>

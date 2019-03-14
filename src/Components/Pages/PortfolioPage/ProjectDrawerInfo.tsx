@@ -1,11 +1,7 @@
 import React, { Fragment } from 'react'
+import { IProps } from './ProjectDrawerInfoType'
 
-interface Props {
-    title: string | undefined,
-    description: string | undefined
-}
-
-export default (props: Props) => {
+export default (props: IProps) => {
     let { title, description } = props
     return (
         <Fragment>

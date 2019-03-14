@@ -1,15 +1,10 @@
 import React from 'react'
+import { IProps } from './ProjectDrawerLinksType'
 
 // import assets
 import { code_icon, home_icon } from '../../../assets'
 
-interface Props {
-    path: string | undefined,
-    repo: string | undefined,
-    live: boolean | undefined
-}
-
-export default (props: Props) => {
+export default (props: IProps) => {
     let { path, repo, live } = props
 
     let projectLink = !!live ? path : 'javascript:void(0)'

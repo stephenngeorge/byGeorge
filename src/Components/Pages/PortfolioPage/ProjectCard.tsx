@@ -1,21 +1,7 @@
 import React from 'react'
+import { IProps } from './ProjectCardType'
 
-interface Project {
-    title?: string,
-    description?: string,
-    path?: string,
-    repo?: string,
-    img?: string,
-    techStack?: string[],
-    live?: boolean
-}
-interface Props {
-    project: Project,
-    focusProject: Project,
-    setFocusProject(project: Project): any
-}
-
-export default (props: Props) => {
+export default (props: IProps) => {
     let { project, setFocusProject, focusProject } = props
 
     const handleClick = (selectProject: any) => {
