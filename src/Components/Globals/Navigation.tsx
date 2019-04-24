@@ -97,7 +97,7 @@ export default () => {
                 </li>
                 
                 <li className='navigation__item'>
-                    <a  href='https://www.linkedin.com/in/stephen-george-1a7a1445/'
+                    <a  href='https://www.linkedin.com/in/stephen-pal-george-1a7a1445/'
                         className='navigation__link'
                         id='linkedin-link'
                         target='_blank'
